@@ -1,8 +1,10 @@
+import { TitleText, SectionText } from './Section.styled';
+
 export function Section({title, children}) {
     return (
-        <section>
-            {title && <h2>{title}</h2>}
+        <SectionText>
+            {title && <TitleText>{title}</TitleText>}
             {children}
-        </section>
+        </SectionText>
     )
 }
